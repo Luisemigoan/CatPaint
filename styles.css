@@ -6,4 +6,61 @@ body {
     background-color: #c9d2fc;
 }
 
-/*Paso 6*/
+.cat-head {
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    width: 205px;
+    height: 180px;
+    border: 1px solid #000;
+    border-radius: 46%;
+    background: linear-gradient(to bottom, #5e5e5e 85%, #45454f 100%); 
+}
+
+/*El posicionamiento CSS te permite establecer cómo quieres posicionar un elemento en el navegador. Tiene una propiedad position a la que puedes dar un valor static, absolute, relative, sticky o fixed.
+
+Una vez que estableces la propiedad position del elemento, puedes mover éste indicando un píxel o un valor porcentual para una o más de las propiedades top, right, left o bottom.
+
+static es la posición predeterminada para todos los elementos. Si la asignas a un elemento, no podrás moverlo con top, right, left, o bottom.*/
+
+/*Cuando usas el valor relative, el elemento todavía está posicionado acorde con el flujo normal del documento, pero los valores top, left, bottom, y right se activan.*/
+
+/*La siguiente propiedad de posición es absolute. Cuando usas el valor absolute para tu propiedad position, el elemento se saca del flujo normal del documento, y luego su posición es determinada por las propiedades top, right, bottom, y left.*/
+
+/*fixed es un valor de la propiedad position que te permite hacer un elemento fijado a la página sin importar dónde el usuario se desplace en la página.*/
+
+/*El último valor de la propiedad de posición es sticky. El posicionamiento sticky es un híbrido de los posicionamientos relative y fixed. Permite a un elemento pegarse a una posición específica dentro de su elemento contenedor o ventana, basada en la posición del desplazamiento.*/
+
+/*Ahora aprenderás un truco CSS para dibujar triángulos.
+
+Se utilizará para dibujar las orejas del gato.
+
+Mediante un selector de clase, asigna al elemento .cat-right-ear las propiedades height y width establecidas en 100px. Establece el background-color a white. Establece los bordes izquierdo y derecho en 35px solid blue. Establece los bordes superior e inferior en 35px solid red.*/
+
+/*.cat-right-ear {
+    height: 100px;
+    width: 100px;
+    background-color: white;
+    border-left: 35px solid blue;
+    border-right: 35px solid blue;
+    border-top: 35px solid red;
+    border-bottom: 35px solid red;
+}*/
+
+/*Observa que ahora tienes un cuadrado blanco con bordes gruesos. Los bordes tienen esquinas diagonales que pueden utilizarse para crear triángulos.
+
+Dentro del mismo selector de clase ajusta la height y la width a 0. Establece los bordes i, derecho y superior como transparent.
+
+Elimina la propiedad background-color, y debes ver un triángulo.*/
+
+.cat-right-ear {
+    height: 0px;
+    width: 0px;
+    border-left: 35px solid transparent;
+    border-right: 35px solid transparent;
+    border-top: 35px solid transparent;
+    border-bottom: 35px solid red;
+}
