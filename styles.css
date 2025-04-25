@@ -56,11 +56,114 @@ Dentro del mismo selector de clase ajusta la height y la width a 0. Establece lo
 
 Elimina la propiedad background-color, y debes ver un triángulo.*/
 
-.cat-right-ear {
+/*.cat-right-ear {
     height: 0px;
     width: 0px;
     border-left: 35px solid transparent;
     border-right: 35px solid transparent;
     border-top: 35px solid transparent;
     border-bottom: 35px solid red;
+}
+*/
+
+.cat-left-ear {
+    position: absolute;
+    top: -26px;
+    left: -31px;
+    z-index: 1;
+    border-top-left-radius: 90px;
+    border-top-right-radius: 10px;
+    transform: rotate(-45deg);
+    border-left: 35px solid transparent;
+    border-right: 35px solid transparent;
+    border-bottom: 70px solid #5e5e5e;
+}
+
+/*Para posicionar la oreja izquierda adecuadamente, puedes utilizar CSS transform para rotarla en cierto grado.
+
+La propiedad transform te permite modificar la forma, posición, y tamaño de un elemento sin cambiar el diseño o afectar a los elementos en su alrededor. Posee funciones como translate(), rotate(), scale(), skew(), y matrix().*/
+
+.cat-right-ear {
+    position: absolute;
+    top: -26px;
+    left: 163px;
+    z-index: 1;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 90px;
+    transform: rotate(45deg);
+    border-left: 35px solid transparent;
+    border-right: 35px solid transparent;
+    border-bottom: 70px solid #5e5e5e;
+}
+
+/*z-index es una propiedad que puedes usar para definir el orden de la superposición de elementos HTML. Cualquier elemento con un z-index mayor siempre será colocado sobre un elemento con un z-index menor.*/
+
+.cat-left-inner-ear {
+    position: absolute;
+    top: 22px;
+    left: -20px;
+    border-top-left-radius: 90px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 40%;
+    border-bottom-right-radius: 40%;
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    border-bottom: 40px solid #3b3b4f;
+}
+
+.cat-right-inner-ear {
+    position: absolute;
+    top: 22px;
+    left: -20px;
+    border-top-left-radius: 90px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 40%;
+    border-bottom-right-radius: 40%;
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    border-bottom: 40px solid #3b3b4f;
+}
+
+.cat-left-eye {
+    position: absolute;
+    top: 54px;
+    left: 39px;
+    border-radius: 60%;
+    transform: rotate(25deg);
+    width: 30px;
+    height: 40px;
+    background-color: #000;
+}
+
+.cat-right-eye {
+    position: absolute;
+    top: 54px;
+    left:134px;
+    border-radius: 60%;
+    transform: rotate(-25deg);
+    width: 30px;
+    height: 40px;
+    background-color: #000;
+}
+
+.cat-left-inner-eye {
+    position: absolute;
+    top: 8px;
+    left: 2px;
+    border-radius: 60%;
+    transform: rotate(10deg);
+    width: 10px;
+    height: 20px;
+    background-color: #fff;
+}
+
+.cat-right-inner-eye {
+    position: absolute;
+    top: 8px;
+    left: 18px;
+    border-radius: 60%;
+    transform: rotate(-5deg);
+    width: 10px;
+    height: 20px;
+    background-color: #fff;
 }
